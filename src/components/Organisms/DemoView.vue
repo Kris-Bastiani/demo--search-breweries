@@ -1,12 +1,20 @@
 <template>
 	<main class="demo__view">
-		<h1>Hello World</h1>
+		<demo-header />
+		<demo-footer author="Kris Bastiani" />
 	</main>
 </template>
 
 <script>
+import DemoHeader from '../Atoms/DemoHeader.vue'
+import DemoFooter from '../Atoms/DemoFooter.vue'
+
 export default {
-	name: 'DemoView'
+	name: 'DemoView',
+	components: {
+		DemoHeader,
+		DemoFooter
+	}
 }
 </script>
 

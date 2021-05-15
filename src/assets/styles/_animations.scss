@@ -1,0 +1,11 @@
+@mixin anim_spin($duration: 2500ms) {
+	animation-name: anim_spin;
+	animation-duration: $duration;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes anim_spin {
+	from { transform:rotate(0deg); }
+	to { transform:rotate(360deg); }
+}

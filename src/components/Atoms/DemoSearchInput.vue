@@ -21,7 +21,7 @@ export default {
 			store.setIsPending(true)
 			// TODO: throttle getResults
 			const response = await getResults(this.query)
-			this.$emit('get-results', response.result)
+			store.setResults(response)
 			store.setIsPending(false)
 		}
 	}

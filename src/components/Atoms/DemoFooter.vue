@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'FlpFooter',
+  name: 'DemoFooter',
   props: { author: String },
   data: () => ({ year: new Date().getFullYear() })
 }

@@ -5,6 +5,7 @@
 		</demo-header>
 		<div class="demo__view__body">
 			<div v-show="sharedState.isPending" class="demo__spinner" />
+			<demo-results-list :results="sharedState.results" />
 		</div>
 		<demo-footer author="Kris Bastiani" />
 	</main>
@@ -15,13 +16,15 @@ import store from '../../store'
 import DemoHeader from '../Atoms/DemoHeader.vue'
 import DemoFooter from '../Atoms/DemoFooter.vue'
 import DemoSearchInput from '../Atoms/DemoSearchInput.vue'
+import DemoResultsList from '../Molecules/DemoResultsList.vue'
 
 export default {
 	name: 'DemoView',
 	components: {
 		DemoHeader,
 		DemoFooter,
-		DemoSearchInput
+		DemoSearchInput,
+		DemoResultsList
 	},
 	data: () => ({ sharedState: store.state })
 }

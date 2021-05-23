@@ -11,6 +11,7 @@
 <script>
 import store from '../../store'
 import getResults from '../../helpers/getResults'
+import formatResults from '../../helpers/formatResults'
 
 export default {
 	name: 'DemoSearchInput',
@@ -21,7 +22,7 @@ export default {
 			store.setIsPending(true)
 			// TODO: throttle getResults
 			const response = await getResults(this.query)
-			store.setResults(response)
+			store.setResults(formatResults(response))
 			store.setIsPending(false)
 		}
 	}

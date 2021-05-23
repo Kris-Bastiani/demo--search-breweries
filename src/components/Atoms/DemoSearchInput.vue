@@ -2,7 +2,7 @@
 <input
 	type="text"
 	class="demo__search_input"
-	placeholder="Enter a search term (e.g. Tiberius)"
+	placeholder="Enter a search term (e.g. 'dog')"
 	v-model="query"
 	@input="onInput"
 />

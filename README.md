@@ -1,6 +1,8 @@
-# Demo: Search historical events
+# Demo: Search breweries
 
 Created by Kris Bastiani.
+
+Made possible through the use of the [Open Brewery DB API](https://www.openbrewerydb.org/).
 
 ## Project setup
 ```

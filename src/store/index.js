@@ -1,9 +1,11 @@
+import { reactive } from 'vue'
+
 export default {
 	debug: true,
-	state: {
+	state: reactive({
 		isPending: false,
 		results: []
-	},
+	}),
 	setIsPending (newVal) {
 		this.debug && console.info('setIsPending:', newVal)
 		this.state.isPending = newVal
